@@ -1,4 +1,6 @@
+<html>
 <meta charset="utf-8" />
+<body>
 <ul style="margin: 5% 5%">
     <li>2016-06-06: 了解<a href="http://ismartstudio.com/php-how-to-implement-static-html-pages.html" title="分为伪静态化和真静态化">「页面静态化」</a>的概念</li><br />
     <li>2016-06-07: 安装了一波Nginx<br />
@@ -8,5 +10,42 @@
             <li>site config file -> /etc/nginx/sites-available/***</li><br />
         </ul>
     </li>
-    <li>2016-06-08: 了解<a href="http://www.nowamagic.net/librarys/veda/detail/1319/">php cgi</a>相关，搭建nginx+php(laravel)后端运行<br />
+    <li>2016-06-08: 了解<a href="http://www.nowamagic.net/librarys/veda/detail/1319/">php cgi</a>相关，搭建nginx+php(laravel)后端运行</li><br />
+    <li>2016-06-10: 使用python连接远程主机oracle
+        <ul><br />
+            <li>下载oracle instant client-basic & sdk(使用alien将rpm转为deb)</li><br />
+            <li><a href="#" onclick="alert('output on console');console.log('export ORACLE_HOME=/usr/lib/oracle/11.2/client64\nexport PATH=$PATH:$ORACLE_HOME/bin\nexport LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ORACLE_HOME/lib\nexport TNS_ADMIN=$ORACLE_HOME/network/admin')">需要配置环境变量</a></li><br />
+            <li>下载cx_Oracle -- oracle官方python库</li><br />
+            <li>可选sqlplus (cli连接)</li><br />
+        </ul>
+    </li><br />
+    <li>2016-06-11: oracle gbk字符集显示
+        <ul><br />
+            <li>oracle服务件编码为gbk</li><br />
+            <li>oracle客户端编码为gbk</li><br />
+            <li>python文件编码为gbk</li><br />
+            <li>html文档编码为gbk</li><br />
+            <li>html页面声明编码为gbk</li><br />
+            <li>终端显示编码为gbk</li><br />
+            <li>ajax 使用post方式上传，get中的urlencode会有问题</li><br />
+            <li>unicode占位符在gbk的环境中显示会出现锟斤拷</li><br />
+        </ul>
+    </li>
 </ul>
+<script>
+    var stepLength = 1;
+    var offset = 0;
+    var itv = null;
+
+    function scroll(){
+        stepLength += 1;
+        window.scrollBy(0, stepLength)
+        offset += Math.floor(stepLength);
+        if(offset > window.scrollY)
+            clearInterval(itv);
+    }
+
+	itv = setInterval(scroll, 20);
+</script>
+</body>
+</html>
