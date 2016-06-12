@@ -1,0 +1,35 @@
+
+   memcache：用于缓存项目来构建自己的大负载网站，分担数据库压力
+                        在内存中开辟一块空间，建立一个HashTable 。
+                         服务端 ：一般是在linux系统上安装实现数据的存储。 
+                         客户端 ：比如php去使用服务器端Memcache提供的函数。需php扩展。
+                         在阿里云上安装memcached.
+   python :    在廖雪峰python教程网站上，进行到  函数 （已结束），高级特性 即将开始启动~
+ 
+   apache ：在linux下的站点配置问题，/etc/apache2/apache2.conf，以及/etc/apache2/sites-enabled/000-default.conf 配置 
+                     开启重写模块命令 a2enmod rewrite 。开启php模块 a2enmod php5 .
+                    重启apache2 失败 (AH00558: apache2: Could not reliably determine the server's fully qualified domain name, 
+                    using 10.251.177.182. Set the 'ServerName' directive globally to suppress this message)，
+                     apache2.conf  设置全局变量 ServerName  10.251.177.182 .->问题解决
+    
+    git  :服务器上安装了git ，方便代码管理。
+    
+    在linux上laravel只能访问根目录问题  ：
+               改变vendor权限  chmod -R 777 /storage/vendor  
+
+    RPM软件包： 
+             rpm
+    
+     psftp  向linux上传文件 命令  
+               psftp > put  /filePath/filename  
+                         > get   filename 
+      
+ 命令集合   
+apt-get  install 
+apt-get  autoremove
+apt-get  remove 
+apt-get  clean       
+apt-get  source  
+apt-get  update
+  
+          
