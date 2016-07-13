@@ -1,0 +1,121 @@
+<html>
+<meta charset="utf-8" />
+<body>
+<a href="index.html">back to index.html</a>
+<ul style="margin: 5% 5% 30% 5%">
+    <li>2016-06-12 至2016-06-19:
+        <ul><br>
+            <li >review my course DATEBASE SYSTEM CONCEPTS</li><br>
+            <li>I have learnd about 'Advanced SQL','Formal Relational Query Languages','E-R Model'</li><br>
+            <li>Formal Relational Query Languages include that 'The Relational Algebra' and 'The Tuple Relational Calculus'</li><br>
+        </ul>
+    </li><br />
+    <li>2016-07-04:
+        <ul><br>
+           <li> Know about Eloquent ORM</li>
+       </ul>
+    </li>
+    <br>
+    <li>2016-07-05:<br>
+       <ul><br>
+           <li> write a simple demo to practice ORM ,know about RESTful URL style , clean up 'TRAVEL' database.</li>
+       </ul>
+    </li>
+    <br>
+    <li>2016-07-06:
+       <ul><br>
+           <li>
+               clean up my wiz note for ORM ,  interview people , give the newer jobs ，branch  deployment for 'TRAVEL'.
+           </li>
+       </ul>
+    </li>
+    <br>
+    <li>2016-07-08:
+       <ul><br>
+           <li>
+                write a  simple Route ,learn about Dependency Inject, and write a simple example.
+           </li>
+       </ul>
+    </li>
+    <br>
+     <li>2016-07-09:
+       <ul><br>
+           <li>
+               Go to the travel company for knowing his Requirement, costing  the whole day
+           </li>
+       </ul>
+    </li>
+    <br>
+    <li>2016-07-10:
+       <ul><br>
+           <li>
+              Nothing to study... Some trivial things for today
+           </li>
+       </ul>
+    </li>
+    <br>
+      <li>2016-07-11:
+       <ul><br>
+           <li>
+             与装修项目的委托方交流，了解需求
+           </li><br>
+             <li>
+             准备了intel杯的硬件设施DOBOT机械臂
+           </li><br>
+           <li>
+               初步学习Redis，在阿里云服务器上安装了Redis与php扩展
+           </li><br>
+           <li>
+               花费大量时间为旅行社段先生解决问题，不过我能力有限没能解决，而且表示略烦。
+           </li><br>
+           <li>
+               看视频学习memcached,目前已经对Redis和Memcache有了初步了解
+           </li><br>
+       </ul>
+    </li>
+    <br>
+    <li>2016-07-12:
+        <ul>
+            <br>
+            <li>
+               学习python：
+                  <br><br> 高级特性[ 列表生成式，生成器，迭代器]，函数式编程[高阶函数，返回函数，匿名函数，装饰器，偏函数]
+            </li><br>
+            <li>整理python笔记</li><br>
+            <li>
+                与装修公司赵总三人讨论项目需求
+            </li>
+        </ul>
+
+    </li>
+    <br>
+    <li>2016-07-13:
+        <ul>
+            <br>
+            <li>
+               学习python:  有写小DEMO<br><br>
+                      关于模块，面向对象编程[ 类和实例，访问限制，继承和多态，获取对象信息，实例属性和类属性]，高级编程[ __slots__,@property,定制类，枚举类],
+            </li><br>
+            <li>整理python笔记</li>
+        </ul>
+
+    </li>
+
+</ul>
+    <script>
+    var stepLength = 1;
+    var offset = 0;
+    var itv = null;
+
+    function scroll(){
+        stepLength += 1;
+        window.scrollBy(0, stepLength)
+        offset += Math.floor(stepLength);
+        if(offset > window.scrollY)
+            clearInterval(itv);
+    }
+
+	itv = setInterval(scroll, 20);
+</script>
+</body>
+</html>
