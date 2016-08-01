@@ -188,10 +188,23 @@
       </ul>
   </li>
   <br>
-  <li>2016-07-23:
+  <li>2016-07-28至07-31:
        <ul>
            <br>
-           <li>。。。</li>
+           <li>由于要写简易聊天，所以大量在网络上翻博客翻网页，最简单的是使用socket.io 基于nodejs 以及一个叫做express的nodejs框架
+               <br>故对nodejs，express开始接触，会把nodejs放入之后的学习计划。了解到怎么用nodejs来开启http服务，监听端口。了解到，及时通讯所需要的，
+               <br>比如说反向ajax，long polling。comet,"服务器推"等等这些概念。当然使用socket.io是不需要自己实现长轮询的。它封装起了长轮询和flash等
+               <br>等一些方式。不需要自己实现底层逻辑。然后就是，要自己实现长轮询的话，在客户端写的ajax。后台怎么做呢，看了网上一篇博客，使用python的gevent库，
+               <br>它提供非阻塞的wsgi。当没有新消息到来时，可以用它的event库里wait()挂起。这样的话，就不会使ajax一直去请求。</li>
+  </li>
+  <br>
+  <li>2016-08-01:
+      <ul>
+          <br>
+          <li>之前已经往edison板子里装了所需要的一些环境&类库。摄像头工作所需要的openCV 和那个什么叫UCV的驱动。现在已经可以成功用程序使摄像头拍摄照片了。<br>
+            现在要考虑视频通过网络实时传输的问题。继续搜资料，TCP似乎不行，视频网络传输的话UDP最合适。又找到了一个比openCV更合适的视频传输以及处理的类库ffmpeg。<br>
+            then， I have to study ffmpeg!
+          </li>
   </li>
 </ul>
     <script>
