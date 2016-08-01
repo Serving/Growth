@@ -196,6 +196,8 @@
                <br>比如说反向ajax，long polling。comet,"服务器推"等等这些概念。当然使用socket.io是不需要自己实现长轮询的。它封装起了长轮询和flash等
                <br>等一些方式。不需要自己实现底层逻辑。然后就是，要自己实现长轮询的话，在客户端写的ajax。后台怎么做呢，看了网上一篇博客，使用python的gevent库，
                <br>它提供非阻塞的wsgi。当没有新消息到来时，可以用它的event库里wait()挂起。这样的话，就不会使ajax一直去请求。</li>
+  
+       </ul>
   </li>
   <br>
   <li>2016-08-01:
@@ -205,6 +207,7 @@
             现在要考虑视频通过网络实时传输的问题。继续搜资料，TCP似乎不行，视频网络传输的话UDP最合适。又找到了一个比openCV更合适的视频传输以及处理的类库ffmpeg。<br>
             then， I have to study ffmpeg!
           </li>
+      </ul>
   </li>
 </ul>
     <script>
